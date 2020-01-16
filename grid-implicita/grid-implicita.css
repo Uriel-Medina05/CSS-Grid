@@ -1,0 +1,30 @@
+.contenedor {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 200px 1fr 200px;
+	grid-template-rows: 200px 100px 200px;
+
+	/* Modifica la dimension del elemento creado automaticamente */
+	grid-auto-columns: 100px;
+	grid-auto-rows: 100px;
+
+	/* Invierte el orden en que se colocan los elementos */
+	/*grid-auto-flow: row;*/
+
+	/* Rellena la rejilla como pudo dependiendo de los elementos,
+	   tanto para comlumna como para fila */
+	grid-auto-flow: dense;
+
+}
+
+.contenedor .span2 {
+	grid-column: span 2;
+	/*grid-row: span 2;*/
+	background: #ff8000;
+}
+
+.contenedor .span3 {
+	grid-column: span 3;
+	/*grid-row: span 3;*/
+	background: #575757;
+}
